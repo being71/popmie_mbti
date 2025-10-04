@@ -1,0 +1,163 @@
+[
+  {
+    "question": "Saat kumpul bareng teman,\nKamu biasanya?",
+    "options": [
+      {
+        "text": "🗣️ Paling aktif ngomong dan ngajak ngobrol semua orang",
+        "value": "E"
+      },
+      {
+        "text": "🤫 Lebih nyaman ngobrol dengan 1-2 orang terdekat",
+        "value": "I"
+      }
+    ]
+  },
+  {
+    "question": "Setelah seharian beraktivitas,\nKamu recharge energi dengan?",
+    "options": [
+      { "text": "🎉 Nongkrong atau main bareng orang lain", "value": "E" },
+      { "text": "🏡 Me-time di rumah sambil nonton atau baca", "value": "I" }
+    ]
+  },
+  {
+    "question": "Saat ada acara dadakan,\nKamu akan?",
+    "options": [
+      { "text": "🤩 Langsung gas, tanpa pikir panjang!", "value": "E" },
+      { "text": "🤔 Pertimbangkan dulu, baru memutuskan", "value": "I" }
+    ]
+  },
+  {
+    "question": "Teman menggambarkan kamu sebagai?",
+    "options": [
+      { "text": "🌟 Sosial dan selalu penuh energi", "value": "E" },
+      { "text": "🌙 Tenang dan pemikir", "value": "I" }
+    ]
+  },
+  {
+    "question": "Saat mencoba rasa baru Pop Mie,\nKamu lebih suka?",
+    "options": [
+      { "text": "🍜 Coba bareng teman biar rame-rame seru", "value": "E" },
+      { "text": "🍜 Nikmati sendiri sambil santai", "value": "I" }
+    ]
+  },
+  {
+    "question": "Saat menghadapi masalah,\nKamu lebih sering?",
+    "options": [
+      { "text": "🔧 Fokus pada fakta dan solusi praktis", "value": "S" },
+      { "text": "🧠 Mencari makna lebih dalam dan ide besar", "value": "N" }
+    ]
+  },
+  {
+    "question": "Kalau baca petunjuk memasak,\nKamu?",
+    "options": [
+      {
+        "text": "📏 Ikuti langkahnya satu per satu dengan teliti",
+        "value": "S"
+      },
+      {
+        "text": "✨ Lihat sekilas, lalu improvisasi sesuai feeling",
+        "value": "N"
+      }
+    ]
+  },
+  {
+    "question": "Saat memilih Pop Mie,\nKamu akan?",
+    "options": [
+      { "text": "✅ Pilih rasa klasik yang sudah pasti enak", "value": "S" },
+      { "text": "🔥 Eksperimen dengan rasa unik atau baru", "value": "N" }
+    ]
+  },
+  {
+    "question": "Kamu lebih percaya pada?",
+    "options": [
+      {
+        "text": "👁️ Apa yang bisa kamu lihat dan buktikan langsung",
+        "value": "S"
+      },
+      { "text": "🔮 Kemungkinan dan potensi jangka panjang", "value": "N" }
+    ]
+  },
+  {
+    "question": "Kalau teman cerita ide “gila”,\nKamu biasanya?",
+    "options": [
+      { "text": "🤨 Minta detail dan bukti dulu", "value": "S" },
+      { "text": "🤯 Ikut semangat bayangkan kemungkinan itu", "value": "N" }
+    ]
+  },
+  {
+    "question": "Saat mengambil keputusan,\nKamu lebih mengandalkan?",
+    "options": [
+      { "text": "🧠 Logika dan data", "value": "T" },
+      { "text": "❤️ Perasaan dan dampak ke orang lain", "value": "F" }
+    ]
+  },
+  {
+    "question": "Kalau ada teman minta saran,\nKamu?",
+    "options": [
+      { "text": "📊 Beri solusi rasional dan objektif", "value": "T" },
+      {
+        "text": "🤗 Dengarkan dulu perasaannya lalu beri dukungan",
+        "value": "F"
+      }
+    ]
+  },
+  {
+    "question": "Saat ada perdebatan,\nKamu lebih cenderung?",
+    "options": [
+      { "text": "⚖️ Fokus mencari siapa yang benar", "value": "T" },
+      { "text": "☮️ Fokus menjaga hubungan tetap baik", "value": "F" }
+    ]
+  },
+  {
+    "question": "Dalam memilih rasa Pop Mie,\nKamu?",
+    "options": [
+      {
+        "text": "🧪 Pertimbangkan rasa mana yang paling “worth it”",
+        "value": "T"
+      },
+      { "text": "💓 Pilih berdasarkan mood atau kenangan", "value": "F" }
+    ]
+  },
+  {
+    "question": "Kalau melihat orang lain salah,\nKamu?",
+    "options": [
+      { "text": "🧑‍⚖️ Memberi koreksi biar tidak terulang lagi", "value": "T" },
+      { "text": "🫂 Menenangkan dulu agar tidak merasa bersalah", "value": "F" }
+    ]
+  },
+  {
+    "question": "Saat membuat rencana jalan-jalan,\nKamu lebih suka?",
+    "options": [
+      { "text": "📅 Semua terencana dari awal sampai akhir", "value": "J" },
+      { "text": "🎢 Spontan dan fleksibel sesuai situasi", "value": "P" }
+    ]
+  },
+  {
+    "question": "Saat ada tenggat tugas,\nKamu?",
+    "options": [
+      { "text": "🧑‍💻 Kerjakan jauh-jauh hari supaya tenang", "value": "J" },
+      { "text": "😅 Sering mepet deadline tapi tetap selesai", "value": "P" }
+    ]
+  },
+  {
+    "question": "Kalau harus pilih rasa baru Pop Mie,\nKamu?",
+    "options": [
+      { "text": "📚 Baca review atau tanya teman dulu", "value": "J" },
+      { "text": "🎲 Langsung coba tanpa mikir panjang", "value": "P" }
+    ]
+  },
+  {
+    "question": "Kamu lebih nyaman jika hidup terasa?",
+    "options": [
+      { "text": "📊 Teratur dan bisa diprediksi", "value": "J" },
+      { "text": "🌈 Berubah-ubah dan penuh kejutan", "value": "P" }
+    ]
+  },
+  {
+    "question": "Saat masak mie instan,\nKamu?",
+    "options": [
+      { "text": "⏱️ Selalu pakai timer dan langkah teratur", "value": "J" },
+      { "text": "🤹‍♂️ Masak sambil multitasking hal lain", "value": "P" }
+    ]
+  }
+]

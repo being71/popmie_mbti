@@ -1,0 +1,232 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("/images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+/* Overlay gelap agar background tidak mengganggu */
+.body-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* Card utama */
+.container {
+  position: relative;
+  z-index: 1; /* tetap di atas overlay */
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fdf5e6; /* cream ringan */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container-card {
+  background: #fdf5e6; /* cream ringan Pop Mie */
+  padding: 30px;
+  border-radius: 20px;
+  padding-top: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: auto;
+  color: #222;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.question-text {
+  height: 5rem; /* kira-kira tinggi untuk 2 baris teks */
+  line-height: 2rem; /* sesuaikan dengan font-size */
+  overflow: hidden; /* teks lebih dari 2 baris dipotong */
+  white-space: pre-line; /* agar \n tetap bekerja */
+  margin-bottom: 20px;
+  border-bottom: 0px solid #6ee7b7; /* optional border agar terlihat area pertanyaan */
+  padding-bottom: 10px;
+}
+
+.answer-buttons {
+  /* Tombol jawaban selalu di bawah */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto; /* 🔑 mengisi sisa ruang, tombol tetap di bawah */
+}
+
+.logo-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-heading .logo-img {
+  width: 2em; /* ukuran setara emoji */
+  height: 2em; /* ukuran setara emoji */
+  margin-right: 0.5em; /* jarak antara logo dan teks */
+}
+
+.center {
+  text-align: center;
+}
+
+/* Judul & teks */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff0000; /* merah Pop Mie */
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #228b22; /* hijau segar */
+}
+
+/* Tombol */
+.btn {
+  display: inline-block;
+  background: #ffd700; /* kuning emas */
+  color: #222;
+  padding: 12px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff0000; /* merah kuat saat hover */
+  color: #fff;
+}
+
+/* Progress Bar */
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  border-radius: 20px;
+  height: 12px;
+  margin: 30px 0;
+}
+#quiz-box .progress {
+  margin-top: 0.5rem; /* atau 0 jika ingin menempel */
+  margin-bottom: 1rem; /* beri jarak ke pertanyaan */
+}
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8, #6ee7b7); /* biru ke hijau mint */
+  border-radius: 20px;
+  transition: width 0.3s;
+}
+
+/* Animasi fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.question {
+  animation: fadeIn 0.4s ease;
+  margin-bottom: 20px;
+}
+
+.question p {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Popup / result card */
+.result-card {
+  max-width: 800px;
+  border-radius: 1rem;
+  background: #fdf5e6; /* cream ringan */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+}
+
+.result-img {
+  max-height: 250px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.result-img:hover {
+  transform: scale(1.05);
+}
+
+body.result-page {
+  position: relative;
+  background: url("/images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+body.result-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* gelap semi-transparan */
+  z-index: 0; /* di bawah kontainer */
+}
+
+.result-title {
+  font-size: 2rem;
+  color: #ff0000; /* merah */
+}
+
+.result-popmie {
+  font-size: 1.5rem;
+  color: #228b22; /* hijau */
+}
+
+.result-desc {
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0 10px;
+  color: #222;
+}
+
+.popmie-name {
+  white-space: pre-line;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffd700; /* kuning */
+}
+
+#btnA,
+#btnB {
+  background: #ffd700; /* kuning emas */
+  color: #222;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#btnA:hover,
+#btnB:hover {
+  background: #228b22; /* hijau Pop Mie */
+  color: #fff;
+}
