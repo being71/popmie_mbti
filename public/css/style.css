@@ -141,6 +141,77 @@ p {
   border-radius: 20px;
   transition: width 0.3s;
 }
+body.result-page {
+  position: relative;
+  background: url("/images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+body.result-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* ===== LABEL ===== */
+label {
+  display: block;
+  margin: 0.25rem 0;
+}
+
+/* ===== RESULT CARD ===== */
+.result-card {
+  max-width: 700px;
+  border-radius: 1rem;
+  background: #fdf5e6;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+}
+
+.result-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.result-img:hover {
+  transform: scale(1.05);
+}
+
+.result-title {
+  font-size: 1.8rem;
+  color: #ff0000;
+}
+
+.result-popmie {
+  font-size: 1.2rem;
+  color: #228b22;
+}
+
+.result-desc {
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0 0.5rem;
+  color: #222;
+}
+
+.popmie-name {
+  white-space: pre-line;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffd700;
+}
 
 /* ===== ANIMASI ===== */
 @keyframes fadeIn {
@@ -159,30 +230,55 @@ p {
   margin-bottom: 1rem;
 }
 
-/* ===== MEDIA QUERIES ===== */
+/* ===== RESET BOX-SIZING ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ===== MEDIA QUERIES MOBILE ===== */
 @media (max-width: 575px) {
   .body-bg {
-    padding-top: 40%; /* mobile lebih jauh ke bawah */
+    padding-top: 40%; /* mobile default */
   }
 
   .container {
-    width: 95%;
+    width: 90%; /* 10% sisa total margin */
+    max-width: 95%; /* tidak melebihi layar */
+    padding: 1rem; /* jarak di dalam */
+    margin-left: auto;
+    margin-right: auto; /* pastikan ada jarak kiri kanan */
+    gap: 0.5rem;
+  }
+
+  .container-card {
+    width: 100%;
     padding: 1rem;
+    gap: 0.5rem;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
   }
 
   #btnA,
   #btnB {
-    font-size: 0.95rem;
-    padding: 0.65rem;
+    font-size: 0.9rem;
+    padding: 0.6rem;
   }
 
   .question-text {
-    min-height: 3.5rem;
-    line-height: 1.6rem;
+    min-height: 3rem;
+    line-height: 1.4rem;
+  }
+
+  .progress-bar {
+    height: 8px;
   }
 }
 
@@ -225,12 +321,5 @@ p {
 
   .progress-bar {
     height: 12px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container-card,
-  .container {
-    max-width: 700px;
   }
 }
