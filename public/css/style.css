@@ -143,6 +143,7 @@ p {
 }
 body.result-page {
   position: relative;
+  padding-top: 1%; /* desktop default */
   background: url("/images/background.png") no-repeat center center fixed;
   background-size: cover;
   color: #222;
@@ -280,6 +281,19 @@ label {
   .progress-bar {
     height: 8px;
   }
+}
+
+body.result-page {
+  padding-top: 5%; /* jarak lebih jauh untuk HP */
+}
+
+.result-card {
+  max-width: 700px;
+  border-radius: 1rem;
+  background: #fdf5e6;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: auto;
 }
 
 @media (min-width: 576px) {
